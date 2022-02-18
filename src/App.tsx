@@ -1,5 +1,5 @@
-import { ProductButtons, ProductCard, ProductImage, ProductTitle } from "bt-product-card";
-
+// import { ProductButtons, ProductCard, ProductImage, ProductTitle } from "bt-product-card";
+import { MyLabel } from "bt-my-storybook-components";
 import "./App.css";
 
 const product = {
@@ -11,7 +11,7 @@ const product = {
 function App() {
   return (
     <div className="App App-header">
-      <ProductCard product={product} initialValues={{ count: 4, maxCount: 10 }}>
+      {/* <ProductCard product={product} initialValues={{ count: 4, maxCount: 10 }}>
         {({ reset, count, increaseBy, isMaxCountReached }) => (
           <>
             <ProductImage />
@@ -19,7 +19,8 @@ function App() {
             <ProductButtons />
           </>
         )}
-      </ProductCard>
+      </ProductCard> */}
+      <MyLabel label="Hello World" size="h1" color="tertiary" />
     </div>
   );
 }
